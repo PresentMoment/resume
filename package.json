@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://presentmoment.github.io/Resume/",
+  "homepage": "https://presentmoment.github.io/resume/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
