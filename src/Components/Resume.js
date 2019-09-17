@@ -125,42 +125,42 @@ export default class Resume extends Component {
           </div>
           <div className="skillsImg">
             <img
-              src="/images/skills/react.png"
+              src="images/skills/react.png"
               alt=""
               id="React"
               onMouseEnter={this.handleEnter}
               onMouseLeave={this.handleLeave}
             />
             <img
-              src="/images/skills/js.png"
+              src="images/skills/js.png"
               alt=""
               id="JavaScript"
               onMouseEnter={this.handleEnter}
               onMouseLeave={this.handleLeave}
             />
             <img
-              src="/images/skills/css.png"
+              src="images/skills/css.png"
               alt=""
               id="CSS"
               onMouseEnter={this.handleEnter}
               onMouseLeave={this.handleLeave}
             />
             <img
-              src="/images/skills/html.png"
+              src="images/skills/html.png"
               alt=""
               id="HTML"
               onMouseEnter={this.handleEnter}
               onMouseLeave={this.handleLeave}
             />
             <img
-              src="/images/skills/node.png"
+              src="images/skills/node.png"
               alt=""
               id="Node.JS"
               onMouseEnter={this.handleEnter}
               onMouseLeave={this.handleLeave}
             />
             <img
-              src="/images/skills/mongo.png"
+              src="images/skills/mongo.png"
               alt=""
               id="MongoDB"
               onMouseEnter={this.handleEnter}
