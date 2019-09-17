@@ -16,12 +16,16 @@ export default class Footer extends Component {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/robert-girardin/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fa fa-linkedin" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="skype:+12137693973?call">
                   <i className="fa fa-skype" />
                 </a>
               </li>

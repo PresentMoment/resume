@@ -1,5 +1,20 @@
 import React, { Component } from "react";
 export default class Resume extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      image: ""
+    };
+  }
+
+  handleLeave = () => {
+    this.setState({ image: "" });
+  };
+
+  handleEnter = e => {
+    this.setState({ image: e.target.id });
+  };
+
   render() {
     return (
       <section id="resume">
@@ -108,38 +123,60 @@ export default class Resume extends Component {
               <span>Skills</span>
             </h1>
           </div>
-          <div className="nine columns main-col">
-            <div className="bars">
-              <ul className="skills">
-                <li>
-                  <span className="bar-expand photoshop" />
-                  <em>React.JS</em>
-                </li>
-                <li>
-                  <span className="bar-expand illustrator" />
-                  <em>JavaScript</em>
-                </li>
-                <li>
-                  <span className="bar-expand css" />
-                  <em>HTML/CSS</em>
-                </li>
-                <li>
-                  <span className="bar-expand wordpress" />
-                  <em>Node.JS</em>
-                </li>
-                <li>
-                  <span className="bar-expand photoshop" />
-                  <em>Adobe PhotoShop</em>
-                </li>
-                <li>
-                  <span className="bar-expand photoshop" />
-                  <em>Adobe Premiere</em>
-                </li>
-              </ul>
-            </div>
+          <div className="skillsImg">
+            <img
+              src="/images/skills/react.png"
+              alt=""
+              id="React"
+              onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+            />
+            <img
+              src="/images/skills/js.png"
+              alt=""
+              id="JavaScript"
+              onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+            />
+            <img
+              src="/images/skills/css.png"
+              alt=""
+              id="CSS"
+              onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+            />
+            <img
+              src="/images/skills/html.png"
+              alt=""
+              id="HTML"
+              onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+            />
+            <img
+              src="/images/skills/node.png"
+              alt=""
+              id="Node.JS"
+              onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+            />
+            <img
+              src="/images/skills/mongo.png"
+              alt=""
+              id="MongoDB"
+              onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+            />
+
             {/* end skill-bars */}
           </div>{" "}
           {/* main-col end */}
+          <div
+            className={
+              this.state.image.length > 1 ? "skillsTitle" : "skillsHolder"
+            }
+          >
+            <h5>{this.state.image.length > 1 ? this.state.image : "\u00A0"}</h5>
+          </div>
         </div>{" "}
         {/* End skills */}
       </section>

@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.skillsImg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.skillsImg img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.skillsHolder {
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: -3em;
+  text-align: center;
+  width: 30vw;
+  background-color: #fff;
+  border: transparent;
+  border-radius: 3em;
+}
+
+.skillsTitle {
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: -3em;
+  text-align: center;
+  width: 10vw;
+  background-color: rgba(57, 161, 167, 0.3);
+  border: transparent;
+  border-radius: 3em;
+}

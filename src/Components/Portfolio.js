@@ -5,7 +5,7 @@ export default class Portfolio extends Component {
       <section id="portfolio">
         <div className="row">
           <div className="twelve columns collapsed">
-            <h1>Check Out Some of My Works.</h1>
+            <h1>My Projects:</h1>
             {/* portfolio-wrapper */}
             <div
               id="portfolio-wrapper"
