@@ -9,7 +9,7 @@ export default class Portfolio extends Component {
             {/* portfolio-wrapper */}
             <div
               id="portfolio-wrapper"
-              className="bgrid-quarters s-bgrid-thirds cf"
+              className="bgrid-thirds s-bgrid-thirds cf"
             >
               <div className="columns portfolio-item">
                 <div className="item-wrap">
@@ -31,6 +31,23 @@ export default class Portfolio extends Component {
               <div className="columns portfolio-item">
                 <div className="item-wrap">
                   <a href="#modal-02" title>
+                    <img alt="" src="images/portfolio/artist.png" />
+                    <div className="overlay">
+                      <div className="portfolio-item-meta">
+                        <h5>Portfolio Site</h5>
+                        <p>Ground up React portfolio to showcase my artwork</p>
+                      </div>
+                    </div>
+                    <div className="link-icon">
+                      <i className="icon-plus" />
+                    </div>
+                  </a>
+                </div>
+              </div>{" "}
+              {/* item end */}
+              <div className="columns portfolio-item">
+                <div className="item-wrap">
+                  <a href="#modal-03" title>
                     <img alt="" src="images/portfolio/simma.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
@@ -47,7 +64,7 @@ export default class Portfolio extends Component {
               {/* item end */}
               <div className="columns portfolio-item">
                 <div className="item-wrap">
-                  <a href="#modal-03" title>
+                  <a href="#modal-04" title>
                     <img alt="" src="images/portfolio/just.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
@@ -64,7 +81,7 @@ export default class Portfolio extends Component {
               {/* item end */}
               <div className="columns portfolio-item">
                 <div className="item-wrap">
-                  <a href="#modal-04" title>
+                  <a href="#modal-05" title>
                     <img alt="" src="images/portfolio/primary.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
@@ -81,7 +98,7 @@ export default class Portfolio extends Component {
               {/* item end */}
               <div className="columns portfolio-item">
                 <div className="item-wrap">
-                  <a href="#modal-05" title>
+                  <a href="#modal-06" title>
                     <img alt="" src="images/portfolio/finn.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
@@ -98,7 +115,7 @@ export default class Portfolio extends Component {
               {/* item end */}
               <div className="columns portfolio-item">
                 <div className="item-wrap">
-                  <a href="#modal-06" title>
+                  <a href="#modal-07" title>
                     <img alt="" src="images/portfolio/api.png" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
@@ -141,12 +158,45 @@ export default class Portfolio extends Component {
               </span>
             </div>
             <div className="link-box">
-              <a href="https://materialism.herokuapp.com/">Details</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://materialism.herokuapp.com/"
+              >
+                Details
+              </a>
               <a className="popup-modal-dismiss">Close</a>
             </div>
           </div>
           {/* modal-01 End */}
           <div id="modal-02" className="popup-modal mfp-hide">
+            <img
+              className="scale-with-grid"
+              src="images/portfolio/modals/m-artist.png"
+              alt=""
+            />
+            <div className="description-box">
+              <h4>Portfolio Site</h4>
+              <p>
+                Fully responsive, SPA portfolio site built with React and CSS
+              </p>
+              <span className="categories">
+                <i className="fa fa-tag" />
+                React, CSS
+              </span>
+            </div>
+            <div className="link-box">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://presentmoment.github.io/artist/"
+              >
+                Details
+              </a>
+              <a className="popup-modal-dismiss">Close</a>
+            </div>
+          </div>
+          <div id="modal-03" className="popup-modal mfp-hide">
             <img
               className="scale-with-grid"
               src="images/portfolio/modals/m-simma.png"
@@ -163,12 +213,18 @@ export default class Portfolio extends Component {
               </span>
             </div>
             <div className="link-box">
-              <a href="http://simma.herokuapp.com/">Details</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://simma.herokuapp.com/"
+              >
+                Details
+              </a>
               <a className="popup-modal-dismiss">Close</a>
             </div>
           </div>
           {/* modal-02 End */}
-          <div id="modal-03" className="popup-modal mfp-hide">
+          <div id="modal-04" className="popup-modal mfp-hide">
             <img
               className="scale-with-grid"
               src="images/portfolio/modals/m-just.png"
@@ -186,12 +242,18 @@ export default class Portfolio extends Component {
               </span>
             </div>
             <div className="link-box">
-              <a href="https://presentmoment.github.io/Just/">Details</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://presentmoment.github.io/Just/"
+              >
+                Details
+              </a>
               <a className="popup-modal-dismiss">Close</a>
             </div>
           </div>
           {/* modal-03 End */}
-          <div id="modal-04" className="popup-modal mfp-hide">
+          <div id="modal-05" className="popup-modal mfp-hide">
             <img
               className="scale-with-grid"
               src="images/portfolio/modals/m-primary.png"
@@ -209,14 +271,18 @@ export default class Portfolio extends Component {
               </span>
             </div>
             <div className="link-box">
-              <a href="https://presentmoment.github.io/Primary-States/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://presentmoment.github.io/Primary-States/"
+              >
                 Details
               </a>
               <a className="popup-modal-dismiss">Close</a>
             </div>
           </div>
           {/* modal-04 End */}
-          <div id="modal-05" className="popup-modal mfp-hide">
+          <div id="modal-06" className="popup-modal mfp-hide">
             <img
               className="scale-with-grid"
               src="images/portfolio/modals/m-finn.png"
@@ -231,14 +297,18 @@ export default class Portfolio extends Component {
               </span>
             </div>
             <div className="link-box">
-              <a href="https://presentmoment.github.io/Financial-Auralizer/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://presentmoment.github.io/Financial-Auralizer/"
+              >
                 Details
               </a>
               <a className="popup-modal-dismiss">Close</a>
             </div>
           </div>
           {/* modal-05 End */}
-          <div id="modal-06" className="popup-modal mfp-hide">
+          <div id="modal-07" className="popup-modal mfp-hide">
             <img
               className="scale-with-grid"
               src="images/portfolio/modals/m-api.png"
@@ -256,7 +326,13 @@ export default class Portfolio extends Component {
               </span>
             </div>
             <div className="link-box">
-              <a href="https://numbersapicalc.herokuapp.com/">Details</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://numbersapicalc.herokuapp.com/"
+              >
+                Details
+              </a>
               <a className="popup-modal-dismiss">Close</a>
             </div>
           </div>

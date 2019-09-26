@@ -826,7 +826,7 @@ input[type="checkbox"] {
 }
 .column.centered,
 .columns.centered {
-  float: none;
+  float: left;
   margin: 0 auto;
 }
 
@@ -839,10 +839,10 @@ input[type="checkbox"] {
 }
 
 [class*="column"] + [class*="column"]:last-child {
-  float: right;
+  float: left;
 }
 [class*="column"] + [class*="column"].end {
-  float: right;
+  float: left;
 }
 
 /* column widths */
@@ -1038,7 +1038,7 @@ properly.
     clear: none;
   }
   .s-first {
-    clear: left;
+    clear: none;
   }
 }
 
@@ -1053,7 +1053,7 @@ properly.
   .column,
   .columns {
     width: auto !important;
-    float: none;
+    float: left;
     margin-left: 0;
     margin-right: 0;
     padding: 0 30px;
@@ -1065,10 +1065,10 @@ properly.
   }
 
   [class*="column"] + [class*="column"]:last-child {
-    float: none;
+    float: left;
   }
   [class*="bgrid"] [class*="column"] + [class*="column"]:last-child {
-    float: none;
+    float: left;
   }
 
   /* Offsets */
@@ -1137,7 +1137,7 @@ properly.
   display: table;
 }
 .cf:after {
-  clear: both;
+  clear: none;
 }
 
 /*  2. Misc -------------------------------------------------------- */
